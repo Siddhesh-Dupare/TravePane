@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Imprima&family=Labrada:wght@600&family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', snas-serif;
+    color: white;
+}
+body {
+    background-image: url(/images/background-home-page-image.png);
+}
+/* Navigation bar of the home page */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 30px;
+    text-align: justify;
+    margin: 0 10px;
+}
+header a {
+    text-decoration: none;
+}
+header nav li {
+    display: inline;
+}
+header nav li a {
+    padding: 1em;
+}
+/* Button */
+button {
+    color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* End of navigation bar of home page */
