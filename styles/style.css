@@ -7,36 +7,56 @@
     font-family: 'Arvo', snas-serif;
     color: white;
 }
-body {
-    background-image: url(/images/background-home-page-image.png);
-}
-/* Navigation bar of the home page */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 30px;
-    text-align: justify;
-    margin: 0 10px;
+body {
+    background-image: url("/images/background-home-page-image.png");
 }
-header a {
+/* Navigation bar */
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.menu-item {
+    padding: 20px;
+}
+
+a {
     text-decoration: none;
 }
-header nav li {
-    display: inline;
-}
-header nav li a {
-    padding: 1em;
-}
-/* Button */
-button {
-    color: black;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    border: 1px solid black;
-    cursor: pointer;
+.submenu {
+    padding: 5px;
 }
 
-/* End of navigation bar of home page */
+.menu-item, .submenu {
+    list-style-type: none;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+button {
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: black;
+    font-size: 17px;
+}
+/* Navigation bar end */
+
+/* Sub navigation bar */
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+.menu-item:hover .submenu {
+    display: block;
+}
